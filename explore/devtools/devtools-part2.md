@@ -1,0 +1,2 @@
+1. The bug was that when numbers a typed into the form, their values are passed to the JavaScript as strings. So when the calculateSum function adds the strings, they are just concatenated instead of an arithmetic operation.
+2. I would fix it by trying to cast the string values from the HTML to numbers before they are passed to the function, using `parseFloat` (this should work for both integers and floats).
