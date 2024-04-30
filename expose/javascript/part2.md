@@ -63,6 +63,10 @@ F. `true`: `Boolean(2)` has a truthy value and will be equal to the boolean `tru
 
 15.  The `==` operator checks for equality using type conversions (more of a 'test') whereas the `===` operator is a strict equality operator that checks for equality without type conversions.
 
-17.  If the function is called with `modifyArray([1,2,3], doSomething)` the returned result will be the array `[2,4,6]`. In this case, the function `doSomething` is passed to `modifyArray` as the `callback` variable. The function will have `newArr` initialized to be empty, then the loop will go through each element in the array `[1,2,3]` and push the result of the `callback` function on that element to the `newArr` array. `doSomething` here multiplies the value it is passed by 2, so the resulting array stored at `newArr` will be `[2,4,6]`.
+16. See JS file
 
-19.  The code first prints `1`, `4`, then `3` (even with a timeout of 0 it will go on a queue until the thread has finished executing). A second later the code will print `2`.
+17. If the function is called with `modifyArray([1,2,3], doSomething)` the returned result will be the array `[2,4,6]`. In this case, the function `doSomething` is passed to `modifyArray` as the `callback` variable. The function will have `newArr` initialized to be empty, then the loop will go through each element in the array `[1,2,3]` and push the result of the `callback` function on that element to the `newArr` array. `doSomething` here multiplies the value it is passed by 2, so the resulting array stored at `newArr` will be `[2,4,6]`.
+
+18. See JS file
+
+19. The code first prints `1`, `4`, then `3` (even with a timeout of 0 it will go on a queue until the thread has finished executing). A second later the code will print `2`.
