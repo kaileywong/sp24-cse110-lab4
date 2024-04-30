@@ -16,7 +16,7 @@
 
 9.  This code causes an error because the `i` variable is declared using let. THis means it has block scope and in this case, it will only be accessible within the for loop. At line 11 this is outside the scope, so trying to print the value of `i` will result in an error.
 
-10. At line 12, the code will print the value of the const variable `length` (3). At line 4, the variable is declared to be `prices.length`, or the length of the `prices` array, which is 3 in this case. The declaration is within the scope function, so the variable is still within scope at line 12, and its value will be printed.
+10. At line 12, the code will print the value of the const variable `length` (3). At line 4, the variable is declared to be `prices.length`, or the length of the `prices` array, which is 3 in this case. The declaration is within the scope of the function, so the variable is still within scope at line 12, and its value will be printed.
 
 11. This function returns the array assigned to the `discounted` variable. It uses the given `discount` to calculate the discounted price for each element in `prices`, in this case `[100, 200, 300]` with `discount` as `0.5`. The for loop will go through each value in the array to calculate the discounted price rounded to 2 decimal places then push it to the `discounted` array. This is valid even though `discounted` is a const variable because the value is not being reassigned, but the array assigned to it is being updated. The final returned array for the variable in this case will be `[50, 100, 150]`.
 
@@ -32,7 +32,7 @@ D. `student['Favorite Teacher'].name`
 E. `student.courseLoad[0]`
 
 13.  
-A. `'32`: `2` is converted to its string representation `'2'` then concatenated
+A. `'32'`: `2` is converted to its string representation `'2'` then concatenated
 
 B. `1`; `'3'` is converted to an integer then `3-2` is calculated
 
