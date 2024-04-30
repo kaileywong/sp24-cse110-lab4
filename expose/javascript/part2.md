@@ -55,7 +55,7 @@ B. `false`: the string `2` is lexicographically after `12`
 
 C. `true`: the string `'2'` is converted to its integer representation `2` which is equal to `2`
 
-D. `false`: the `===` operator checks equality without type conversion, a string and number of different types
+D. `false`: the `===` operator checks equality without type conversion, a string and number are of different types
 
 E. `false`: `true` is converted to `1` which is not equal to `2`
 
