@@ -16,7 +16,7 @@
 
 9.  This code causes an error because the `i` variable is declared using let. THis means it has block scope and in this case, it will only be accessible within the for loop. At line 11 this is outside the scope, so trying to print the value of `i` will result in an error.
 
-10. At line 12, the code will print the value of the const variable `length` (3). At line 4, the variable is declared to be `prices.length`, or the length of the `prices` array, which is 3 in this case. The declaration is within the scope function, so the variable is still within scope at line 12, and its value will be printed.
+10. At line 12, the code will print the value of the const variable `length` (3). At line 4, the variable is declared to be `prices.length`, or the length of the `prices` array, which is 3 in this case. The declaration is within the scope of the function, so the variable is still within scope at line 12, and its value will be printed.
 
 11. This function returns the array assigned to the `discounted` variable. It uses the given `discount` to calculate the discounted price for each element in `prices`, in this case `[100, 200, 300]` with `discount` as `0.5`. The for loop will go through each value in the array to calculate the discounted price rounded to 2 decimal places then push it to the `discounted` array. This is valid even though `discounted` is a const variable because the value is not being reassigned, but the array assigned to it is being updated. The final returned array for the variable in this case will be `[50, 100, 150]`.
 
@@ -32,7 +32,7 @@ D. `student['Favorite Teacher'].name`
 E. `student.courseLoad[0]`
 
 13.  
-A. `'32`: `2` is converted to its string representation `'2'` then concatenated
+A. `'32'`: `2` is converted to its string representation `'2'` then concatenated
 
 B. `1`; `'3'` is converted to an integer then `3-2` is calculated
 
@@ -55,7 +55,7 @@ B. `false`: the string `2` is lexicographically after `12`
 
 C. `true`: the string `'2'` is converted to its integer representation `2` which is equal to `2`
 
-D. `false`: the `===` operator checks equality without type conversion, a string and number of different types
+D. `false`: the `===` operator checks equality without type conversion, a string and number are of different types
 
 E. `false`: `true` is converted to `1` which is not equal to `2`
 
@@ -63,6 +63,10 @@ F. `true`: `Boolean(2)` has a truthy value and will be equal to the boolean `tru
 
 15.  The `==` operator checks for equality using type conversions (more of a 'test') whereas the `===` operator is a strict equality operator that checks for equality without type conversions.
 
-17.  If the function is called with `modifyArray([1,2,3], doSomething)` the returned result will be the array `[2,4,6]`. In this case, the function `doSomething` is passed to `modifyArray` as the `callback` variable. The function will have `newArr` initialized to be empty, then the loop will go through each element in the array `[1,2,3]` and push the result of the `callback` function on that element to the `newArr` array. `doSomething` here multiplies the value it is passed by 2, so the resulting array stored at `newArr` will be `[2,4,6]`.
+16. See JS file
 
-19.  The code first prints `1`, `4`, then `3` (even with a timeout of 0 it will go on a queue until the thread has finished executing). A second later the code will print `2`.
+17. If the function is called with `modifyArray([1,2,3], doSomething)` the returned result will be the array `[2,4,6]`. In this case, the function `doSomething` is passed to `modifyArray` as the `callback` variable. The function will have `newArr` initialized to be empty, then the loop will go through each element in the array `[1,2,3]` and push the result of the `callback` function on that element to the `newArr` array. `doSomething` here multiplies the value it is passed by 2, so the resulting array stored at `newArr` will be `[2,4,6]`.
+
+18. See JS file
+
+19. The code first prints `1`, `4`, then `3` (even with a timeout of 0 it will go on a queue until the thread has finished executing). A second later the code will print `2`.
